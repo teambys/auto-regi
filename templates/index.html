@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Creation Log</title>
+    <style>
+        body {
+            background-color: #101010;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .log-entry, .ping-log-entry {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Creation Log</h1>
+        <p>Total Accounts Created: {{ account_count }}</p>
+        <div>
+            {% for log in logs %}
+                <div class="log-entry">{{ log }}</div>
+            {% endfor %}
+        </div>
+        <h2>Ping Logs</h2>
+        <div>
+            {% for ping_log in ping_logs %}
+                <div class="ping-log-entry">{{ ping_log }}</div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
