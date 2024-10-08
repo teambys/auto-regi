@@ -78,7 +78,7 @@ def post_data():
 
 # Define the auto-ping function
 def auto_ping():
-    ping_url = "https://auto-regi.onrender.com"  # Replace with the actual URL to ping
+    ping_url = "https://auto-regi.onrender.com/"  # Replace with the actual URL to ping
 
     while True:
         try:
